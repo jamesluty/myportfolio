@@ -1,0 +1,392 @@
+/* global */
+* {
+  /* font-family: 'Noto Sans', sans-serif; */
+  /* font-family: 'Raleway', sans-serif; */
+  font-family: 'Source Code Pro', monospace;
+  margin: 0px;
+}
+
+/* navbar */
+.navbar {
+  background-color: rgb(2, 70, 112);
+  border-bottom: 5px solid black;
+  color: white;
+  position: sticky;
+  opacity: 95%;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+}
+
+.navbar {
+  align-items: center;
+  display: flex;
+}
+
+.navTitle {
+  align-items: center;
+  display: flex;
+  font-family: cursive;
+  flex: 1;
+  gap: 40px;
+  margin-left: 30px;
+  width: 100%;
+}
+
+.navWrapper {
+  display: flex;
+  flex: 4;
+  justify-content: end;
+  list-style: none;
+}
+
+.navbar a {
+  color: whitesmoke;
+  font-family: cursive;
+  font-size: 15pt;
+  text-decoration: none;
+}
+
+.navLink {
+  padding: 20px 20px;
+}
+
+.navLink:hover {
+  background-color: rgb(0, 133, 177);
+  color: black;
+}
+
+/* Banner Section */
+.banner {
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+  height: 250px;
+  padding: 70px 0px 0px 50px;
+}
+
+.jobType1 {
+  margin-bottom: 20px;
+}
+
+.jobType2 {
+  margin-bottom: 40px;
+}
+
+/* About me section */
+.aboutHeader {
+  font-family: cursive;
+  font-size: 30pt;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.aboutContent {
+  align-items: center;
+  display: flex;
+  gap: 15%;
+  font-size: 15pt;
+  font-weight: bold;
+  flex-wrap: column;
+  margin: 50px 100px 50px 100px;
+}
+
+.aboutLeft {
+  flex: 3;
+}
+
+.aboutRight {
+  display: flex;
+  justify-content: center;
+  flex: 2;
+  width: 10%;
+}
+
+#slideShow1 {
+  border-radius: 2%;
+  display: inherit;
+  justify-content: space-around;
+  height: 350px;
+  width: auto;
+}
+
+#slideShow2, #slideShow3, #slideShow4 {
+  border-radius: 2%;
+  display: none;
+  height: 350px;
+  width: auto;
+}
+
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .2}
+  to {opacity: 1}
+}
+
+
+/* Projects section */
+.projectsBanner {
+  background: fixed;
+  background-size: cover;
+  color: rgb(235, 235, 235);
+  font-family: cursive;
+  font-size: 40pt;
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.projectLinks {
+  display: flex;
+  gap: 50px;
+  justify-content: center;
+  margin: 30px 0px 0px 0px;
+}
+
+.linkDiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.linkIcon {
+  width: 60px;
+}
+
+.projectText {
+  display: none;
+  margin-top: 8px;
+  text-align: center;
+}
+
+.iconDiv {
+  display: flex;
+  justify-content: center;
+  width: 100px;
+  margin-bottom: 40px;
+}
+
+.iconDiv:hover {
+  margin-bottom: 0px;
+}
+
+/* .iconDiv:hover + .projectText {
+  animation: bounce .7s;
+  display: block;
+  text-align: center;
+} */
+
+.project {
+  display: flex;
+  gap: 30px;
+  justify-content: space-between;
+  margin: 20px 50px 0px 50px;
+  padding: 20px;
+}
+
+.projectLeft {
+  flex: 5;
+  font-size: 15pt;
+  padding: 30px;
+}
+
+.projectRight {
+  padding: 30px 20px;
+  flex: 4;
+}
+
+.projectImg {
+  height: 100%;
+  width: 100%;
+}
+
+.listItem {
+  margin-bottom: 10px;
+}
+
+.projectDesc {
+  margin-bottom: 15px;
+}
+
+/* Green Belt Tree Care Project */
+.gbtcTitle {
+  color: green;
+  font-family: cursive;
+  font-size: 30pt;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Outdoor Adventures Project */
+.outdoorsTitle {
+  color: rgb(0, 0, 207);
+  font-family: cursive;
+  font-size: 30pt;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+/* Skills Section */
+.skillsBanner {
+  background: fixed;
+  background-size: cover;
+  color: rgb(235, 235, 235);
+  font-family: cursive;
+  font-size: 40pt;
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.skillsHeader {
+  font-size: 30pt;
+  margin: 30px 0px;
+  text-align: center;
+}
+
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.skillsIcon {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: top;
+  width: 120px;
+}
+
+.icon {
+  height: 70px;
+  width: 70px;
+}
+
+.skillName {
+  display: none;
+  margin-top: 8px;
+}
+
+.iconDiv:hover + .skillName {
+  display: inherit;
+  animation: bounce .7s;
+  text-align: center;
+}
+
+@keyframes bounce {
+  0% {
+    display: inherit;
+    margin-top: 0px;
+    opacity: 20%;
+  }
+
+  20% {
+    display: inherit;
+    margin-top: 15px;
+    opacity: 100%;
+  }
+
+  100% {
+    display: inherit;
+    margin-top: 8px;
+    opacity: 100%;
+  }
+}
+
+/* Experience Section */
+.experienceBanner {
+  background: fixed;
+  background-size: cover;
+  color: rgb(235, 235, 235);
+  font-family: cursive;
+  font-size: 40pt;
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.position {
+  margin: 40px 25%;
+}
+
+.positionDetails {
+  margin: 10px 0px;
+  font-size: 13pt;
+}
+
+/* Education Section */
+.educationBanner {
+  background: fixed;
+  background-size: cover;
+  color: rgb(235, 235, 235);
+  font-family: cursive;
+  font-size: 40pt;
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.school {
+  margin: 40px 25%;
+}
+
+.educationDetails {
+  margin: 10px 0px;
+  font-size: 13pt;
+}
+
+/* Contact Me Section */
+.contactBanner {
+  background: fixed;
+  background-size: cover;
+  color: rgb(235, 235, 235);
+  font-family: cursive;
+  font-size: 40pt;
+  padding: 50px 0px;
+  text-align: center;
+}
+
+.contactSection {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin: 50px 0px 0px 0px;
+}
+
+.contactIcon {
+  width: 80px;
+}
+
+.contactDiv {
+  width: 90px;
+  margin-bottom: 10px;
+}
+
+.contactName {
+  display: none;
+  margin-top: 8px;
+}
+
+.iconDiv:hover + .contactName {
+  animation: bounce .7s;
+  display: inherit;
+  text-align: center;
+}
+
+.footer {
+  font-family: cursive;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+@media only screen and (max-width: 1024px){
+  .sm {
+      display: none;
+  }
+  .smfont {
+      font-size: 12pt;
+  }
+}
